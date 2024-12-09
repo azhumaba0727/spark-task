@@ -12,9 +12,9 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Define paths
-restaurant_data_path = "/Users/anuarzhumabayev/Desktop/EPAM_Training/spark-task/restaurant_csv"
-weather_data_path = "/Users/anuarzhumabayev/Desktop/EPAM_Training/spark-task/weather"
-output_path = "/Users/anuarzhumabayev/Desktop/EPAM_Training/spark-task/final_dataset"
+restaurant_data_path = "./restaurant_csv"
+weather_data_path = "./weather"
+output_path = "./final_dataset"
 
 # Read restaurant data
 restaurant_df = spark.read.option("header", "true").csv(restaurant_data_path)
